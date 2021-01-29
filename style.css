@@ -155,20 +155,53 @@ img {
   #steps .row > div:last-child {
     margin-right: 0%;
   }
-
-
-  /* #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-    width: calc(50% - 4px);
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    float: none;
-    display: inline-block;
-  } */
   /* /steps */
 
+  /* perchè */
+  #why {
+    background-color: #428bca;
+    color: #F3F3F3;
+    text-align: left;
+  }
+  
+  #why h1,  #why h3 {
+    color: #fff;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 80%;
+    margin: 50px auto 0;
+    padding-bottom: 50px;
+  }
+
+  #why .row>.first,
+  #why .row>.second {
+    border-bottom: 1px solid #fff;
+  }
+
+  #why .row img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-right: 10%;
+    margin-bottom: 20px;
+  }
+
+  #why h1 {
+    text-align: center;
+  }
+
+  #why h3 {
+    float: 70%;
+  }
+
+  #why hr {
+    display: none;
+  }
 /* /responsive--max980px */
 
 
@@ -192,29 +225,8 @@ img {
     min-height: inherit;
   } 
   /* /mix */
-  
-
-
-  /* steps */
-  /* #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  } */
-  /* /steps */
 
   /* perchè */
-  #why {
-    background-color: #428bca;
-    color: #F3F3F3;
-  }
-
-  #why h1,  #why h3 {
-    color: #fff;
-  }
-
   #why .row img {
     border-radius: 50%;
     padding: 10px;
