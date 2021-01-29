@@ -76,59 +76,76 @@ img {
 /* responsive */
 /* responsive--max420PX */
 @media screen and (max-width:420px) {
-  
-  /* typo */
+  * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  /* typo */
   body {
     font-size: 18px;
   }
 
   h1 {
-    margin: 40px 0 20px;
     font-size: 35px;
   }
 
   h3 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin: 20px auto 10px;
   }
   /* /typo */
   
   /* mix */
   .container {
-    width: 85%;
+    width: 100%;
     min-width: 280px;
     margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .container.grey {
+    margin-bottom: 20px;
   }
 
   .row {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
-  /* /mix */
-  
-  /* lezioni */
-  #lezioni .row img {
-    height: 100px;
-  }
-  /* /lezioni */
 
-  /* lezioni/steps */
   #lezioni .row>.left, 
   #lezioni .row>.right,
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
     float: none;
-    width: calc( 100% - 60px);
+    width: 100%;
     margin-top: 20px;
     padding: 35px 30px;
-    background-color: #EDF0F5;
     border-radius: 8px;
   }
-  /* lezioni/steps */
+  /* /mix */
+  
+  /* lezioni */
+  #lezioni .row img, .row img {
+    height: 100px;
+  }
+
+  #lezioni .row>.left, 
+  #lezioni .row>.right {
+    background-color: #EDF0F5;
+  }
+  /* /lezioni */
 
   /* steps */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
   /* /steps */
 
-}
+/* perchè */
+/* /perchè */
