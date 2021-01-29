@@ -74,8 +74,8 @@ img {
 
 
 /* responsive */
-/* responsive--max420PX */
-@media screen and (max-width:420px) {
+/* responsive--max980px */
+@media screen and (max-width:980px) {
   * { 
     margin: 0;
     padding: 0;
@@ -96,15 +96,14 @@ img {
     margin: 30px auto 20px;
   }
   /* /typo */
-  
+
   /* mix */
   img {
     height: 100px;
   }
-  
+
   .container {
     width: 100%;
-    min-width: 280px;
     margin: 0 auto;
     padding: 40px 0;
   }
@@ -112,6 +111,73 @@ img {
   .row {
     width: 80%;
     margin: 0 auto;
+  }
+
+  /* lezioni */
+  #lezioni .row>.left, 
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 48%;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 8px;
+  }
+
+  #lezioni .row>.left, 
+  #lezioni .row>.right {
+    background-color: #EDF0F5;
+    min-height: 370px;
+  }
+
+  #lezioni .row>.left {
+    margin-right: 4%;
+  }
+  /* /lezioni */
+
+
+  /* steps */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    float: none;
+    display: inline-block;
+  }
+
+  #steps .row > div:nth-child(2n) {
+    margin-right: calc(4% - 8px);
+    margin-left: 0;
+  }
+
+  #steps .row > div:last-child {
+    margin-right: 0%;
+  }
+
+
+  /* #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: calc(50% - 4px);
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    float: none;
+    display: inline-block;
+  } */
+  /* /steps */
+
+/* /responsive--max980px */
+
+
+/* responsive--max420PX */
+@media screen and (max-width:420px) {
+  
+  /* mix */
+  .container {
+    min-width: 280px;
   }
 
   #lezioni .row>.left, 
@@ -123,24 +189,20 @@ img {
     width: 100%;
     margin-top: 20px;
     padding: 35px 30px;
-    border-radius: 8px;
-  }
+    min-height: inherit;
+  } 
   /* /mix */
   
-  /* lezioni */
-  #lezioni .row>.left, 
-  #lezioni .row>.right {
-    background-color: #EDF0F5;
-  }
-  /* /lezioni */
+
 
   /* steps */
-  #steps .row>.left,
+  /* #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
+    border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
+  } */
   /* /steps */
 
   /* perchè */
@@ -172,4 +234,5 @@ img {
     border: 1px solid #fff;
   }
   /* /perchè */
+  /* /responsive--max420PX */
 }
