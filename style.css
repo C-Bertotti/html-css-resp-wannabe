@@ -50,7 +50,7 @@
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 30px;
 }
 
 /* COMMON */
@@ -93,20 +93,20 @@ img {
 
   h3 {
     font-size: 25px;
-    margin: 20px auto 10px;
+    margin: 30px auto 20px;
   }
   /* /typo */
   
   /* mix */
+  img {
+    height: 100px;
+  }
+  
   .container {
     width: 100%;
     min-width: 280px;
     margin: 0 auto;
     padding: 40px 0;
-  }
-
-  .container.grey {
-    margin-bottom: 20px;
   }
 
   .row {
@@ -128,10 +128,6 @@ img {
   /* /mix */
   
   /* lezioni */
-  #lezioni .row img, .row img {
-    height: 100px;
-  }
-
   #lezioni .row>.left, 
   #lezioni .row>.right {
     background-color: #EDF0F5;
@@ -147,6 +143,33 @@ img {
   }
   /* /steps */
 
-/* perchè */
+  /* perchè */
+  #why {
+    background-color: #428bca;
+    color: #F3F3F3;
+  }
 
-/* /perchè */
+  #why h1,  #why h3 {
+    color: #fff;
+  }
+
+  #why .row img {
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid #fff;
+    background-color: transparent;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third,
+  #why hr {
+    margin: 50px auto;
+  }
+
+  #why hr {
+    width: 40%;
+    border: 1px solid #fff;
+  }
+  /* /perchè */
+}
